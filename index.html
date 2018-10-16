@@ -2,10 +2,142 @@
 <html>
     <head>
         <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Zebrapharm</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="Bilder/">
     </head>
+    <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+    </style>
     <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+          <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="#Wir" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Wir</a>
+            <a href="#Johannes" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Johannes</a>
+            <a href="#Kontakt" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Kontakt</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+              <button class="w3-padding-large w3-button" title="Produkte">Produkte <i class="fa fa-caret-down"></i></button>     
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">p2</a>
+                <a href="#" class="w3-bar-item w3-button">p1</a>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+          </div>
+        </div>
+
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+          <a href="#Wir" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Wir</a>
+          <a href="#Johannes" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Johannes</a>
+          <a href="#Kontakt" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kontakt</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Produkte</a>
+        </div>
+            
+            
+                    <!-- Page content -->
+        <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+          <!-- Automatic Slideshow Images -->
+          <div class="mySlides w3-display-container w3-center">
+            <img src="/Bilder/02-RainbowUnicorn.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            </div>
+          </div>
+          <div class="mySlides w3-display-container w3-center">
+            <img src="/Bilder/03-ChainsawUnicorn.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            </div>
+          </div>
+          <div class="mySlides w3-display-container w3-center">
+            <img src="/Bilder/04-Classy-Narwhal.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            </div>
+          </div>
+            
+          
+          <!-- Wir -->
+          <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Wir">
+            <h2 class="w3-wide">Über uns</h2>
+            <p class="w3-opacity"><i>Zebrapharm</i></p>
+            <p class="w3-justify">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah 
+              Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
+            <div class="w3-row w3-padding-32">
+              <div class="w3-third">
+                <p>Doris</p>
+                <img src="/Bilder/" class="w3-round w3-margin-bottom" alt="" style="width:60%">
+              </div>
+              <div class="w3-third">
+                <p>Tina</p>
+                <img src="/Bilder/" class="w3-round w3-margin-bottom" alt="" style="width:60%">
+              </div>
+              <div class="w3-third">
+                <p>Petra</p>
+                <img src="/Bilder/" class="w3-round" alt="" style="width:60%">
+              </div>
+            </div>
+          </div>
+            </div>
+            
+            
+          <!-- Johannes -->
+          <div class="w3-black" id="Johannes">
+          </div>
+            
+
+
+          <!-- The Contact Section -->
+          <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="Kontakt">
+            <h2 class="w3-wide w3-center">Kontakt</h2>
+            <p class="w3-opacity w3-center"><i>Bei Fragen.</i></p>
+            <div class="w3-row w3-padding-32">
+              <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i>Oldenburg 26131<br>
+                <i class="fa fa-phone" style="width:30px"></i> Telefon: 14993<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@<br>
+              </div>
+                 
+             
+
+        <!-- End Page Content -->
+        </div>
+
+        <script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000);    
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        } 
+
+        </script>
+        
+              
     </body>
 </html>
